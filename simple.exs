@@ -86,7 +86,7 @@ IO.puts "hello\nworld"
 IO.puts is_binary("hellø")
 IO.puts is_binary "cheese"
 # And we can determine the byte size
-
+IO.puts byte_size("hellø")
 
 
 
