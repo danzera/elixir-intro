@@ -85,8 +85,12 @@ IO.puts "hello\nworld"
 # Strings are represented as binaries
 IO.puts is_binary("hellø")
 IO.puts is_binary "cheese"
+
 # And we can determine the byte size
 IO.puts byte_size("hellø")
+
+# And check a string's length
+IO.puts String.length("hellø")
 
 
 
