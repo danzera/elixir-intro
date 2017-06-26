@@ -92,6 +92,9 @@ IO.puts byte_size("hellø")
 # And check a string's length
 IO.puts String.length("hellø")
 
+# There are many String methods
+IO.puts String.upcase("hellø")
+
 
 
 
