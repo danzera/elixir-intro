@@ -95,7 +95,15 @@ IO.puts String.length("hellø")
 # There are many String methods
 IO.puts String.upcase("hellø")
 
-
+# Creating functions
+add = fn a, b -> a + b end
+IO.puts add.(1, 2)
+# check if add is a function
+IO.puts is_function(add)
+# check if add is a function that accepts 2 arguments
+IO.puts is_function(add, 2)
+# check if add is a function that accepts 3 arguments
+IO.puts is_function(add, 3)
 
 
 
