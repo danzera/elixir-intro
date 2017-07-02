@@ -105,6 +105,10 @@ IO.puts is_function(add, 2)
 # check if add is a function that accepts 3 arguments
 IO.puts is_function(add, 3)
 
+double = fn a -> add.(a, a) end
+
+IO.puts double.(2)
+
 
 
 
