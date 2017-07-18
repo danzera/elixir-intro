@@ -128,8 +128,14 @@ IO.puts length test_list_3
 # the head of the list is the first element of the list
 list = [1, 2, 3]
 IO.puts hd(list)
-# the tail of the list is the last element of the list
-IO.puts tl(list)
+
+# Tuples store elements contiguously in memory.
+# This means accessing a tuple element by index or getting the tuple size is a fast operation.
+# Indexes start from zero:
+tuple = {:ok, "hello"}
+{:ok, "hello"}
+IO.puts elem(tuple, 1)
+IO.puts tuple_size(tuple)
 
 
 
