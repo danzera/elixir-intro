@@ -109,6 +109,27 @@ double = fn a -> add.(a, a) end
 
 IO.puts double.(2)
 
+# scoping
+# variables assigned inside a function are scoped locally
+x = 42
+IO.puts x
+scope_test = fn -> x = 0 end
+IO.puts scope_test.()
+IO.puts x
+
+# linked lists
+test_list = [1, 2, true, 33]
+IO.puts length test_list
+test_list_2 = [1, 2, 3] ++ [4, 5, 6]
+IO.puts length test_list_2
+test_list_3 = [1, true, 2, false, 3, true] -- [true, false]
+IO.puts length test_list_3
+
+# the head of the list is the first element of the list
+list = [1, 2, 3]
+IO.puts hd(list)
+# the tail of the list is the last element of the list
+IO.puts tl(list)
 
 
 
